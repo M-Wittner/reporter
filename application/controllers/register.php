@@ -17,59 +17,32 @@ class Register extends CI_Controller
     function register()
     {
         //set validation rules
-<<<<<<< HEAD
+
         $this->form_validation->set_rules('fname', 'First Name', 'trim|required|alpha|min_length[3]|max_length[30]');
         $this->form_validation->set_rules('lname', 'Last Name', 'trim|required|alpha|min_length[3]|max_length[30]');
         $this->form_validation->set_rules('email', 'Email ID', 'trim|required|valid_email|is_unique[users.email]');
 		$this->form_validation->set_rules('password', 'Password', 'trim|required|md5');
         $this->form_validation->set_rules('cpassword', 'Confirm Password', 'trim|required|matches[password]|md5');
 
-=======
-        //$this->form_validation->set_rules('fname', 'First Name', 'trim|required|alpha|min_length[3]|max_length[30]|xss_clean');
-        //$this->form_validation->set_rules('lname', 'Last Name', 'trim|required|alpha|min_length[3]|max_length[30]|xss_clean');
-        //$this->form_validation->set_rules('email', 'Email ID', 'trim|required|valid_email|is_unique[users.email]');
-       // $this->form_validation->set_rules('password', 'Password', 'trim|required|matches[cpassword]|md5');
-        //$this->form_validation->set_rules('cpassword', 'Confirm Password', 'trim|required');
->>>>>>> 0dc24365d7137a21ce31352e43715f697dc06a6e
 			//GO!
         //validate form input
         if ($this->form_validation->run() == FALSE)
         {
 
             // fails
-			die('Make it work fucker!');
             $this->load->view('signup_view');
-<<<<<<< HEAD
-
-=======
-			
->>>>>>> 0dc24365d7137a21ce31352e43715f697dc06a6e
         }
         else
         {
             //insert the user registration details into database
             $data = array(
                 'username' => $this->input->post('username'),
-<<<<<<< HEAD
 				'password' => $this->input->post('password'),
-=======
-                //'lname' => $this->input->post('lname'),
->>>>>>> 0dc24365d7137a21ce31352e43715f697dc06a6e
                 'email' => $this->input->post('email'),
-				 'fname' => $this->input->post('fname'),
-				 'lname' => $this->input->post('lname'),
+				'fname' => $this->input->post('fname'),
+				'lname'	=> $this->input->post('lname'),
             );
-			
-			
-			die('vaild!');
-		
-			die(print_r($data));
-            
-<<<<<<< HEAD
 
-=======
-			
->>>>>>> 0dc24365d7137a21ce31352e43715f697dc06a6e
             // insert form data into database
             if ($this->user_model->insertUser($data))
             {
