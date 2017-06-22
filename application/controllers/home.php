@@ -1,6 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Home extends CI_Controller {
+
+	parent::__construct();
+	$this->load->helper(array('url', 'html'));
+	$this->load->library('session');
+
 	function index() {
 		$this->load->view('home_view');
 	}

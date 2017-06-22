@@ -1,5 +1,5 @@
 <?php
-class user_model extends CI_Model
+class User_model extends CI_Model
 {
     function __construct()
     {
@@ -7,12 +7,22 @@ class user_model extends CI_Model
         parent::__construct();
     }
     
+	//get the username & password from tbl_usrs
+    function get_user($usr, $pwd) {
+		$this->db->select('username, password');
+//		$this->db->from('users');
+		$this->db->where('username', $usr, 'password', md5($pwd));
+		$q = $this->db->get('users');
+		return $q->result();
+    }
+
     //insert into user table
     function insertUser($data)
     {
-        return $this->db->insert('users', $data);
+       $this->db->insert('users', $data);
+		return;
     }
-    
+
 //    //send verification email to user's email id
 //    function sendEmail($to_email)
 //    {

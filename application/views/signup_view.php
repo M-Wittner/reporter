@@ -31,20 +31,19 @@
 							</div>
 						</div>
 					</div>
-					
-<!--
+
 					<div class="form-group">
 						<div class="row colbox">
 							<div class="col-lg-4 col-sm-4">
-								<label for="password" class="control-label">Re: Password</label>
+								<label for="cpassword" class="control-label">Re-Password</label>
 							</div>
 							<div class="col-lg-8 col-sm-8">
-								<input class="form-control" id="repassword" name="repassword" placeholder="Re: Password" type="password" value="<?php echo set_value('repassword'); ?>" />
-								<span class="text-danger"><?php echo form_error('repassword'); ?></span>
+								<input class="form-control" id="cpassword" name="cpassword" placeholder="Re-Password" type="password" value="<?php echo set_value('cpassword'); ?>" />
+								<span class="text-danger"><?php echo form_error('cpassword'); ?></span>
 							</div>
 						</div>
 					</div>
--->
+
 					
 					<div class="form-group">
 						<div class="row colbox">
@@ -54,6 +53,30 @@
 							<div class="col-lg-8 col-sm-8">
 								<input class="form-control" id="email" name="email" placeholder="E-mail" type="email" value="<?php echo set_value('email'); ?>" />
 								<span class="text-danger"><?php echo form_error('email'); ?></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row colbox">
+							<div class="col-lg-4 col-sm-4">
+								<label for="fname" class="control-label">First Name</label>
+							</div>
+							<div class="col-lg-8 col-sm-8">
+								<input class="form-control" id="fname" name="fname" placeholder="Username" type="text" value="<?php echo set_value('fname'); ?>" / autofocus>
+								<span class="text-danger"><?php echo form_error('fname'); ?></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row colbox">
+							<div class="col-lg-4 col-sm-4">
+								<label for="lname" class="control-label">Last Name</label>
+							</div>
+							<div class="col-lg-8 col-sm-8">
+								<input class="form-control" id="lname" name="lname" placeholder="Username" type="text" value="<?php echo set_value('lname'); ?>" / autofocus>
+								<span class="text-danger"><?php echo form_error('lname'); ?></span>
 							</div>
 						</div>
 					</div>
