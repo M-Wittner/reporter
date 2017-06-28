@@ -14,12 +14,17 @@ class Reports extends CI_Controller {
 		$repResult = $this->reportModel->Reports();
 		$data['reportsList'] = $repResult;
 //		$this->load->view('_shared/_layout.php', $data);
-		$this->load->view('reports_view', $data);
+		$this->load->view('Reports/index', $data);
 		echo json_encode($data);
+		
 		
 	}
 	function All() {
 		$reports = $this->reportModel->Reports();
 		echo json_encode($reports);
 	}
+	
+//	function New() {
+//		$this->load->view('Reports/new');
+//	}
 }

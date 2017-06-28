@@ -22,6 +22,9 @@
 
 	<!-- Costum -->
 	<link rel="stylesheet" href="<?php echo base_url();?>public/lib/css/main.css" type="text/css">
+	<!--  Register	-->
+	<script type="text/javascript" src="<?php echo base_url();?>public/js/controllers/register.controller.js"></script>
+	<!--  Reports	-->
 	<script type="text/javascript" src="<?php echo base_url();?>public/js/controllers/app.js"></script>
 	<script type="text/javascript" src="<?php echo base_url();?>public/js/controllers/reports.controller.js"></script>
 </head>

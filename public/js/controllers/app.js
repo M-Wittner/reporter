@@ -3,13 +3,14 @@
 	
 	app.config(function($routeProvider) {
 		$routeProvider
-		.when('/reports', {
-			templateUrl: 'views/login_view.php',
-			controller: 'reportCtrl'
+		.when('/reporter', {
+			templateUrl: 'public/html/index.html',
+			controller: 'mainCtrl'
 		})
 	});
 
-    app.controller('reportCtrl', ['$scope', function ($scope) {
+    app.controller('reportCtrl', ['$scope', '$location', function ($scope, $location) {
 		console.log('success');
+		console.log($location.path());
 	}])
 }());
