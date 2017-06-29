@@ -1,7 +1,11 @@
 var app = angular.module('myApp', ['ngRoute']);
 
 app.controller('registerCtrl', ['$scope', '$http', function ($scope, $http) {
-	$scope.welcome = "test!!!";
-	console.log($scope.welcome);
+	$http({
+        method:'post',
+		url:'http://localhost:3000/reporter/register',
+        //data : $scope.user, //forms user object
+        headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+    })
 
 }]);

@@ -1,4 +1,3 @@
-
 <div class="container" ng-controller="registerCtrl">
 	<p>{{ welcome }}</p>
 	<div class="col-lg-4 col-sm-4 well">

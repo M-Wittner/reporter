@@ -1,12 +1,19 @@
 var app = angular.module('myApp', []);
 
-//app.config(function ($routeProvider) {
-//	$routeProvider
-//		.when('/reporter', {
-//			templateUrl: 'public/html/index.html',
-//			controller: 'mainCtrl'
-//		})
-//});
+app.config(function ($routeProvider) {
+	$routeProvider
+	.when('/', {
+		templateUrl: 'public/html/index.html',
+		controller: 'mainCtrl'
+	})
+	.when('/register', {
+		templateUrl: 'application/views/includes/template.php',
+		controller: 'registerCtrl'
+	})
+	.otherwise({
+		redirectTo: '/index'
+	});
+});
 
 app.directive('myApp', function(){
 	return {
