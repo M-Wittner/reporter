@@ -8,7 +8,8 @@ class Register extends CI_Controller {
 //}
 //	
 public function index() {
-     $data['main_content'] = $this->load->view("signup_view");
+    $data['main_content'] = 'signup_view';
+	$this->load->view("includes/template", $data);
     } 
 //
 //function add()

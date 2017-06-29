@@ -1,4 +1,3 @@
-<?php $this->load->view('includes/header'); ?>
 
 <div class="container" ng-controller="registerCtrl">
 	<p>{{ welcome }}</p>
@@ -87,5 +86,3 @@
 		<?php echo $this->session->flashdata('msg'); ?>
 	</div>
 </div>
-
-<?php $this->load->view('includes/footer'); ?>
