@@ -1,8 +1,9 @@
 <?php $this->load->view('includes/header'); ?>
 
 <div class="container" ng-controller="registerCtrl">
+	<p>{{ welcome }}</p>
 	<div class="col-lg-4 col-sm-4 well">
-		<form name="registerForm">
+		<form name="registerForm" ns-submit="submitForm()">
 			<legend>Sign-Up</legend>
 			<div class="form-group">
 				<div class="row colbox">
@@ -79,7 +80,7 @@
 
 			<div class="form-group">
 				<div class="col-lg-12 col-sm-12 text-center">
-					<button type="submit" class="btn btn-default" ng-click="submitForm">Sign Up</button>
+					<button type="submit" class="btn btn-default" >Sign Up</button>
 				</div>
 			</div>
 		</form>

@@ -1,21 +1,28 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Register extends CI_Controller {
-public function index()
-{
-     $this->fetchdata();
-     $this->load->view("signup_view",$this->data);
-     
 
-}
-public function add()
-{
-    $request= json_decode(file_get_contents('php://input'), TRUE);
-    $data1=$this->ektreemodel->insert_form($request);
-     $this->fetchdata();   
-}
-public function fetchdata()
-{
+//public function __construct() {
+//	parent::__construct();
+//	$this->load->model('test');
+//}
+//	
+public function index() {
+     $data['main_content'] = $this->load->view("signup_view");
+    } 
+//
+//function add()
+//{
+//    $request= json_decode(file_get_contents('php://input'), TRUE);
+//    $data1=$this->test->insert_form($request);
+//    if($data) {
+//		echo "success";
+//	}  else {
+//		echo "failure";
+//	}
+//}
+//function fetchdata()
+//{
     // $data['fetchdata']=$this->ektreemodel->get_users();
     // $this->load->view('fetchangulardata',$data);
 //     $result=$this->db->get('users')->result();
@@ -33,6 +40,6 @@ public function fetchdata()
 //     echo json_encode($arr_data);
      
 
-}
+//}
 }
 ?>

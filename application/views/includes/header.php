@@ -6,14 +6,8 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<!-- Angular -->
 	<script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-aria.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-messages.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js" type="text/javascript"></script>
-
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>public/lib/bootstrap-css/css/bootstrap.min.css" />
@@ -21,11 +15,11 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<!-- Costum -->
+	<script type="text/javascript" src="<?php echo base_url();?>public/js/controllers/app.js"></script>
 	<link rel="stylesheet" href="<?php echo base_url();?>public/lib/css/main.css" type="text/css">
 	<!--  Register	-->
 	<script type="text/javascript" src="<?php echo base_url();?>public/js/controllers/register.controller.js"></script>
 	<!--  Reports	-->
-	<script type="text/javascript" src="<?php echo base_url();?>public/js/controllers/app.js"></script>
 	<script type="text/javascript" src="<?php echo base_url();?>public/js/controllers/reports.controller.js"></script>
 </head>
 <body>
