@@ -13,10 +13,9 @@ class Reports extends CI_Controller {
 	function index() {
 		$repResult = $this->reportModel->Reports();
 		$data['reportsList'] = $repResult;
-//		$this->load->view('_shared/_layout.php', $data);
-		$this->load->view('Reports/index', $data);
-		echo json_encode($data);
-		
+		$data['main_content'] = 'Reports/index';
+		$this->load->view('includes/template', $data);
+		echo json_encode($repResult);
 		
 	}
 	function All() {
@@ -24,7 +23,13 @@ class Reports extends CI_Controller {
 		echo json_encode($reports);
 	}
 	
-//	function New() {
-//		$this->load->view('Reports/new');
-//	}
+	function Create() {
+		$data['main_content'] = 'Reports/create';
+		$this->load->view('includes/template', $data);
+	}
+	
+	function Show() {
+		$data['main_content'] = 'Reports/show';
+		$this->load->view('includes/template', $data);
+	}
 }

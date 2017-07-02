@@ -4,6 +4,7 @@
 	<title>DVT Reporter</title>
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	
 	<!-- Angular -->
 	<script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.min.js"></script>
@@ -44,8 +45,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/reports">All Reports</a></li>
-            <li><a href="/reports/new">New Report</a></li>
+            <li><a href="/reporter/reports">All Reports</a></li>
+            <li><a href="/reporter/reports/create">New Report</a></li>
           </ul>
         </li>
         <li class="pull-right"><a href="#">Logged in as M</a></li>

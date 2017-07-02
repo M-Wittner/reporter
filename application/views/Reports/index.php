@@ -1,6 +1,7 @@
-<?php $this->load->view('includes/header'); ?>
+
 
 <div class="panel panel-primary" ng-controller="reportCtrl">
+	<p>{{ wlecome }}</p>
   <!-- Default panel contents -->
   <div class="panel-heading">All Reports</div>
   <div class="panel-body">
@@ -24,4 +25,4 @@
   </table>
 </div>
 
-<?php $this->load->view('includes/footer'); ?>
+
