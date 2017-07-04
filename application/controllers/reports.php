@@ -13,7 +13,7 @@ class Reports extends CI_Controller {
 	function index() {
 		$this->fetchdata();
 //		$data['main_content'] = 'Reports/index';
-		$this->load->view('index.html', $this->data);
+		$this->load->view('users', $this->data);
 //		$repResult = $this->reportModel->Reports();
 //		$data['reportsList'] = $repResult;
 //		$this->load->view('includes/template', $data);
@@ -23,8 +23,8 @@ class Reports extends CI_Controller {
 	}
 	function fetchdata() {
 		$data['fetchdata']=$this->reportModel->Reports();
-		$data['main_content'] = 'Reports/index';
-		$this->load->view('includes/template', $data);
+//		$data['main_content'] = 'Reports/index';
+//		$this->load->view('includes/template', $data);
 		$result=$this->db->get('reports')->result();
 		$arr_data=array();
 		$i=0;
@@ -37,6 +37,8 @@ class Reports extends CI_Controller {
 		 }
     
      echo json_encode($arr_data);
+		echo '<hr>';
+//     echo json_encode($data['fetchdata']);
 	}
 	function All() {
 		$reports = $this->reportModel->Reports();

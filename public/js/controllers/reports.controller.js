@@ -4,7 +4,7 @@ myApp.controller('reportCtrl', ['$scope', '$location','$http', function ($scope,
 	$scope.report = {};
 	$scope.reports = function () {
 		$http({
-			method: 'post',
+			method: 'GET',
 			dataType: 'json',
 			url: 'http://localhost:3000/reporter/reports',
 			data: $scope.report,
