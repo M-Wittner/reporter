@@ -1,31 +1,31 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 
-myApp.config(function($routeProvider) {
-			  $routePrivider.
-			  when('reports', {
-			  	templateUrl: 'index.html',
-			  	controller: 'reportCtrl'
-			  });
-			  });
-//
+//myApp.config(function($routeProvider) {
+//			  $routePrivider.
+//			  when('/', {
+//			  	templateUrl: 'pages/reports/index.html',
+//			  	controller: 'reportCtrl'
+//			  });
+//			  });
 //myApp.controller('reportCtrl', ['$scope', '$location','$http', function ($scope, $location, $http) {
 //	$scope.report = {};
-//	$scope.reports = function () {
-//		$http({
-//			method: 'GET',
-//			dataType: 'json',
-//			url: 'http://localhost:3000/reporter/reports',
-//			data: $scope.report,
-//			headers: {'Content-Type': 'application/json'}
-//		}).success(function(data) {
-//			$scope.reports = data;
-//		}).error(function (data, status) {
-//			console.log("error");
-//			console.log(data);
-//			console.log(status);
-//		})
-//	}
-//	}]);
+////	$http({
+////		method: 'GET',
+////		url: 'reports',
+////		data: {report: 'report'},
+////		hearders: {'Content-Type': 'application/json'}
+////	}).then(function success(data){
+////		$scope.reports=data;
+////	}).then(function error(data, status){
+////		console.log('error: '+data);
+////	});
+////	$http.get('http://localhost:3000/reporter/reports/all')
+////	.then(function(result) {
+////		console.log(result);
+////		$scope.reports=result;
+////	});
+//	
+//}]);
 //
 //	myApp.controller('registerCtrl', ['$scope','$http','$location', function($scope, $http, $location) {
 //		$scope.try = "test!!!";

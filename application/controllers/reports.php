@@ -1,4 +1,7 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+header('Content-Type: application/json');
+header("Access-Control-Allow-Origin: *");
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Reports extends CI_Controller {
 	public function __construct() {
@@ -11,15 +14,14 @@ class Reports extends CI_Controller {
     }
 
 	function index() {
-		$this->fetchdata();
+		
+//		$this->fetchdata();
 //		$data['main_content'] = 'Reports/index';
-		$this->load->view('users', $this->data);
-//		$repResult = $this->reportModel->Reports();
-//		$data['reportsList'] = $repResult;
-//		$this->load->view('includes/template', $data);
-//		echo json_encode($repResult);
-//		$this->load->view('includes/template', $this->data)
-//		$data['scope'] = $repResult;	
+//		$this->load->view('users', $this->data);
+		$result = $this->reportModel->Reports();
+		$reports = $result;
+		echo json_encode($reports);
+//		$this->load->view('index.html', $result);	
 	}
 	function fetchdata() {
 		$data['fetchdata']=$this->reportModel->Reports();
