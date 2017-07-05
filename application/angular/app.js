@@ -1,12 +1,13 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ui.router']);
 
-//myApp.config(function($routeProvider) {
-//			  $routePrivider.
-//			  when('/', {
-//			  	templateUrl: 'pages/reports/index.html',
-//			  	controller: 'reportCtrl'
-//			  });
-//			  });
+myApp.config(function($stateProvider) {
+  $stateProvider
+	  .state('reports', {
+	  		url: '/',
+	  		templateUrl: 'pages/reports/index.html',
+	  		controller: 'reportCtrl'
+  });
+});
 //myApp.controller('reportCtrl', ['$scope', '$location','$http', function ($scope, $location, $http) {
 //	$scope.report = {};
 ////	$http({
